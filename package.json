@@ -1,0 +1,41 @@
+{
+	"name": "catberry-logger",
+	"version": "1.0.0",
+	"author": "Denis Rechkunov <denis.rechkunov@gmail.com>",
+	"description": "Simple console logger for the Catberry Framework",
+	"homepage": "https://github.com/catberry/catberry-logger",
+	"keywords": [
+		"catberry",
+		"logger",
+		"console",
+		"isomorphic",
+		"universal"
+	],
+	"bugs": {
+		"url": "https://github.com/catberry/catberry-logger/issues",
+		"email": "denis.rechkunov@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/catberry/catberry-logger.git"
+	},
+	"main": "./index.js",
+	"browser": {
+		"./lib/Logger.js": "./browser/Logger.js"
+	},
+	"dependencies": {
+		"pretty-hrtime": "^1.0.2",
+		"chalk": "^1.1.1"
+	},
+	"devDependencies": {
+		"eslint": "^2.0.0"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "./node_modules/.bin/eslint ./",
+		"lint-fix": "./node_modules/.bin/eslint ./ --fix"
+	},
+	"license": "MIT"
+}
